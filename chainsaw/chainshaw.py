@@ -1,6 +1,3 @@
-'''
-Block chain management class
-'''
 import hashlib
 import json
 import requests
@@ -12,6 +9,9 @@ from urllib.parse import urlparse
 
 from flask import Flask, jsonify, request
 
+'''
+Block chain management class
+'''
 class Chainshaw(object):
     def __init__(self):
         self.current_transactions = []
@@ -133,7 +133,7 @@ API Resources
 app = Flask(__name__)
 # Generate unique node id
 node_identifier = str(uuid4()).replace('-', '')
-# Create Blockchain instance
+# Create block chain class instance
 blockchain = Chainshaw()
 
 # API routes
