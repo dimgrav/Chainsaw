@@ -20,6 +20,7 @@ Uses:
 
 ```
 $ virtualenv -p python3.6 <envname>
+$ source <envname>/bin/activate
 ```
 
 ***2. Install requirements***
